@@ -11,10 +11,6 @@ const HeroBanner = () => {
                mask-[radial-gradient(ellipse_60%_50%_at_50%_40%,#000_40%,transparent_100%)]"
       />
 
-      {/* glow arcs */}
-      <div className="pointer-events-none absolute -top-40 left-1/2 h-128 w-lg -translate-x-1/2 rounded-full bg-rose-600/30 blur-[120px]" />
-      <div className="pointer-events-none absolute -bottom-32 -right-24 h-96 w-96 rounded-full bg-red-700/30 blur-[100px]" />
-
       {/* top + bottom hairlines */}
       <div className="absolute inset-x-0 top-0 h-px bg-linear-to-r from-transparent via-rose-500/60 to-transparent" />
       <div className="absolute inset-x-0 bottom-0 h-px bg-linear-to-r from-transparent via-rose-500/40 to-transparent" />

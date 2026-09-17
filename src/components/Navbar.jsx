@@ -1,3 +1,4 @@
+import { Clapperboard } from "lucide-react";
 import { useState } from "react";
 import { Link } from "react-router";
 
@@ -10,8 +11,11 @@ const Navbar = () => {
         <div className="lg:flex lg:items-center lg:justify-between">
           {/* Logo + Mobile Button */}
           <div className="flex items-center justify-between">
-            <div className="text-white text-xl font-bold md:text-3xl">
-              <Link to={"/"}>MOVORA</Link>
+            <div className="text-white text-lg font-bold md:text-3xl">
+              <Link to={"/"} className="flex items-center gap-2">
+                <Clapperboard />
+                <p className="text-[22px]">Movie Explorer</p>
+              </Link>
             </div>
 
             {/* Mobile menu button */}

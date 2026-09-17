@@ -9,7 +9,7 @@ const Footer = () => {
             {/* Application Name */}
             <div className="text-white text-xl font-bold md:text-3xl">
               <Link to={"/"} className="flex items-center gap-2">
-                MOVORA
+                Movie Explorer
               </Link>
             </div>
             {/* /* Optional Links */}
