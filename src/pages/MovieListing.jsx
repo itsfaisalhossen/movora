@@ -50,23 +50,40 @@ const MovieListing = () => {
   }, [query]);
   return (
     <div>
-      <div className="flex items-center justify-center my-14 md:my-20">
-        <div className="relative w-full max-w-3xl mx-auto">
-          <Search
-            className="absolute left-5 top-1/2 -translate-y-1/2 text-gray-400"
-            size={20}
-          />
-          <input
-            type="text"
-            value={query}
-            onChange={(e) => setQuery(e.target.value)}
-            placeholder="Search for a Movie"
-            className="w-full border text-white border-rose-300 text-base rounded-full p-4 pl-12 pr-40 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-rose-400"
-          />
-        </div>
-      </div>
-
       <Container>
+        <div className="my-14 md:my-20 ">
+          <div className="textcenter flex gap-4 max-md:flex-col justify-between items-center text-white mb-12">
+            <div className="fraunces">
+              <p className="text-xs opacity-30">DIVE INTO THE VAULT</p>
+              <h2 className="text-5xl md:text-6xl font-bold ">
+                Your next binge <br />{" "}
+                <p className="text-rose-500">is hiding here.</p>
+              </h2>
+            </div>
+            <div>
+              <p className="w-full md:w-112.5 max-md:text-center opacity-80">
+                Dig through thousands of shows on TVMaze — hunt by title, genre,
+                rating or release year until something clicks.
+              </p>
+            </div>
+          </div>
+          <div className="mt-10 md:mt-24 border border-white/10 bg-white/10 rounded-full p-3 md:p-6 mx-auto max-w-3xl   ">
+            <div className="relative w-full max-w-3xl mx-auto ">
+              <Search
+                className="absolute left-5 top-1/2 -translate-y-1/2 text-gray-400"
+                size={20}
+              />
+              <input
+                type="text"
+                value={query}
+                onChange={(e) => setQuery(e.target.value)}
+                placeholder="Search for a Movie"
+                className="w-full border text-white border-rose-300 text-base rounded-full p-4 pl-12 pr-40 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-rose-400"
+              />
+            </div>
+          </div>
+        </div>
+
         {loading ? (
           <Loading />
         ) : allMovies.length === 0 ? (

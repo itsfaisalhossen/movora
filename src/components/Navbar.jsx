@@ -7,14 +7,14 @@ const Navbar = () => {
 
   return (
     <nav className="relative bg-white shadow dark:bg-rose-800">
-      <div className="container px-6 py-4 mx-auto">
+      <div className="max-w-315 px-6 py-4 mx-auto">
         <div className="lg:flex lg:items-center lg:justify-between">
           {/* Logo + Mobile Button */}
           <div className="flex items-center justify-between">
             <div className="text-white text-lg font-bold md:text-3xl">
               <Link to={"/"} className="flex items-center gap-2">
                 <Clapperboard />
-                <p className="text-[22px]">Movie Explorer</p>
+                <p className="text-[22px]">Movora</p>
               </Link>
             </div>
 

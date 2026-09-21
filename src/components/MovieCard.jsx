@@ -7,7 +7,7 @@ const MovieCard = ({ movie }) => {
   const [selectedMovie, setSelectedMovie] = useState(null);
 
   return (
-    <div className="text-white flex flex-col justify-between lg:bg-[#1f0000] rounded-2xl p-5">
+    <div className="text-white flex flex-col justify-between lg:bg-white/5 border border-white/10 [#1f0000] rounded-2xl p-5">
       <div className=" flex-col flex w-full justify-center items-center">
         <img className="w-[230px]  rounded-2xl" src={image?.medium} alt="" />
       </div>
