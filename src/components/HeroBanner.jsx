@@ -1,4 +1,5 @@
 import { Link } from "react-router";
+import HeroHighlight from "./HeroHighlight";
 
 const HeroBanner = () => {
   return (
@@ -16,6 +17,7 @@ const HeroBanner = () => {
       <div className="absolute inset-x-0 bottom-0 h-px bg-linear-to-r from-transparent via-rose-500/40 to-transparent" />
 
       <div className="relative container mx-auto flex flex-col items-center px-6 py-24 text-center sm:py-32 lg:py-40">
+        <HeroHighlight />
         <h1 className="mt-8 max-w-4xl bg-linear-to-b from-white via-rose-100 to-rose-400/70 bg-clip-text text-5xl font-semibold leading-[1.05] tracking-tight text-transparent sm:text-6xl lg:text-7xl">
           Discover movies
           <br className="hidden sm:block" /> worth your night in
